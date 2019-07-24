@@ -5,16 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/game"
+    android:orientation="vertical"
     android:paddingTop="200dp"
     tools:context=".Score">
 
     <TextView
         android:id="@+id/txtview_score"
-        android:layout_width="wrap_content"
-        android:layout_height="120dp"
-        android:layout_weight="1"
+        android:layout_width="360dp"
+        android:layout_height="62dp"
+        android:layout_gravity="center"
         android:background="#FFFFFF"
-        android:foregroundGravity="center_vertical"
         android:gravity="center"
         android:textSize="18sp" />
 </LinearLayout>

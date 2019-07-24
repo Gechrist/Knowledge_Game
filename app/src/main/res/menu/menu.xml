@@ -7,4 +7,7 @@
     <item
         android:id="@+id/restart"
         android:title="Επανέναρξη" />
+    <item
+        android:id="@+id/main"
+        android:title="Αρχική" />
 </menu>

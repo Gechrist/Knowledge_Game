@@ -49,8 +49,15 @@ public class Score extends AppCompatActivity {
         if (id == R.id.top) {
             startActivity(new Intent(this, Top10Activity.class));
         }
-        if (id == R.id.restart) {
+        if (id == R.id.main) {
             startActivity(new Intent(this, MainActivity.class));
+        }
+        if (id == R.id.restart) {
+            Player player = getIntent().getParcelableExtra("player");
+            player.setScore(0);
+            Intent intent = new Intent(this, GameActivity.class);
+            intent.putExtra("player", player);
+            startActivity(intent);
         }
 
 

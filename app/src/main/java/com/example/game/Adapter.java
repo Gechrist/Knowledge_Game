@@ -45,10 +45,14 @@ public class Adapter extends BaseAdapter {
             newview = inflater.inflate(R.layout.list, null);
         }
 
-        TextView txtview_t10 = (TextView) newview.findViewById(R.id.txtview_score);
+        TextView txtview_t10score = (TextView) newview.findViewById(R.id.txtview_score);
+        TextView txtview_t10name = (TextView) newview.findViewById(R.id.txtview_name);
+        TextView txtview_t10no = (TextView) newview.findViewById(R.id.txtView_no);
 
 
-        txtview_t10.setText(players.get(i).getName()+ "    " + players.get(i).getScore());
+        txtview_t10no.setText(""+(i+1));
+        txtview_t10name.setText(players.get(i).getName());
+        txtview_t10score.setText(players.get(i).getScore()+"/10");
 
         return newview;
 

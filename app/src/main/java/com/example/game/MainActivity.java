@@ -2,15 +2,20 @@ package com.example.game;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
+import android.os.Build;
 import android.os.Bundle;
 
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity  {
@@ -21,26 +26,32 @@ public class MainActivity extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         final EditText edittext = findViewById(R.id.edtxt_name);
         final Button button = findViewById(R.id.btn_start);
-
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String name= edittext.getText().toString();
              if ((name == null || name.isEmpty())){
-                    Player player = new Player ("Δεν έβαλες όνομα", 0);Intent intent = new Intent(MainActivity.this, GameActivity.class);
-                 intent.putExtra("player", player);
-                 startActivity(intent);
-             } else{Player player = new Player (name, 0);Intent intent = new Intent(MainActivity.this, GameActivity.class);
+                 final Dialog dialog = new Dialog(MainActivity.this);
+                 dialog.setContentView(R.layout.dialog);
+
+                 final TextView title = dialog.findViewById(R.id.dialog);
+                 final Button btn_ok = dialog.findViewById(R.id.close_dialog);
+
+                 btn_ok.setOnClickListener(new View.OnClickListener() {
+                     @Override
+                     public void onClick(View v) {
+
+                         dialog.cancel();
+                     }
+                 });
+
+              dialog.show();} else{Player player = new Player (name, 0);Intent intent = new Intent(MainActivity.this, GameActivity.class);
                  intent.putExtra("player", player);
                  startActivity(intent);}
-
-
-                Player player = new Player (name, 0);Intent intent = new Intent(MainActivity.this, GameActivity.class);
-                intent.putExtra("player", player);
-                startActivity(intent);
 
             }
         });

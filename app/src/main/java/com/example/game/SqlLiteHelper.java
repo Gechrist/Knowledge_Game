@@ -44,20 +44,20 @@ import android.database.sqlite.SQLiteOpenHelper;
 
             ContentValues values = new ContentValues();
             values.put(COLUMN_QUESTION, "Ποια σημασία έχει λάβει η 'Νεφελοκοκκυγία' του Αριστοφάνη στην αγγλική γλώσσα;");
-            values.put(COLUMN_ANSWER1, "Είναι ο ύπνος με τα μάτια ανοιχτά");
-            values.put(COLUMN_ANSWER2, "Είναι η θραύση του γυαλιού με τη φωνή σου");
-            values.put(COLUMN_ANSWER3, "Είναι η αναζήτηση σχημάτων στα σύννεφα");
-            values.put(COLUMN_ANSWER4, "Είναι το κολύμπι σε παγωμένα νερά");
-            values.put(COLUMN_CORANSWER, "Είναι η αναζήτηση σχημάτων στα σύννεφα");
+            values.put(COLUMN_ANSWER1, "Ειναι ο υπνος με τα ματια ανοιχτα");
+            values.put(COLUMN_ANSWER2, "Ειναι η θραυση του γυαλιού με τη φωνη σου");
+            values.put(COLUMN_ANSWER3, "Ειναι η αναζητηση σχηματων στα συννεφα");
+            values.put(COLUMN_ANSWER4, "Ειναι το κολυμπι σε παγωμενα νερα");
+            values.put(COLUMN_CORANSWER, "Ειναι η αναζητηση σχηματων στα συννεφα");
             db.insert(TABLE_QUESTIONS, null, values);
 
             values = new ContentValues();
             values.put(COLUMN_QUESTION, "Ποιο έντομο δημιούργησε επιπλοκές σε έναν απ' τους πρώτους υπερυπολογιστές, εξ ου και ο όρος 'computer bug';");
-            values.put(COLUMN_ANSWER1, "Μία μύγα");
-            values.put(COLUMN_ANSWER2, "Μία κατσαρίδα");
-            values.put(COLUMN_ANSWER3, "Ένα ιαπωνικό σκαθάρι");
-            values.put(COLUMN_ANSWER4, "Ένας σκόρος");
-            values.put(COLUMN_CORANSWER, "Ένας σκόρος");
+            values.put(COLUMN_ANSWER1, "Μια μυγα");
+            values.put(COLUMN_ANSWER2, "Μια κατσαριδα");
+            values.put(COLUMN_ANSWER3, "Ενα ιαπωνικο σκαθαρι");
+            values.put(COLUMN_ANSWER4, "Ενας σκορος");
+            values.put(COLUMN_CORANSWER, "Ενας σκορος");
             db.insert(TABLE_QUESTIONS, null, values);
 
             values = new ContentValues();
@@ -80,20 +80,20 @@ import android.database.sqlite.SQLiteOpenHelper;
 
             values = new ContentValues();
             values.put(COLUMN_QUESTION, "Ποια περίκλειστη χώρα βρίσκεται εξ ολοκλήρου εντός άλλης χώρας;");
-            values.put(COLUMN_ANSWER1, "Το Λεσότο");
-            values.put(COLUMN_ANSWER2, "Η Μογγολία");
-            values.put(COLUMN_ANSWER3, "Η Μπουρκίνα Φάσο");
-            values.put(COLUMN_ANSWER4, "Το Λουξεμβούργο");
-            values.put(COLUMN_CORANSWER, "Το Λεσότο");
+            values.put(COLUMN_ANSWER1, "Το Λεσοτο");
+            values.put(COLUMN_ANSWER2, "Η Μογγολια");
+            values.put(COLUMN_ANSWER3, "Η Μπουρκινα Φασο");
+            values.put(COLUMN_ANSWER4, "Το Λουξεμβουργο");
+            values.put(COLUMN_CORANSWER, "Το Λεσοτο");
             db.insert(TABLE_QUESTIONS, null, values);
 
             values = new ContentValues();
             values.put(COLUMN_QUESTION, "Αν φυτέψεις Quercus robur, τι θα φυτρώσει;");
-            values.put(COLUMN_ANSWER1, "Λουλούδι");
-            values.put(COLUMN_ANSWER2, "Δέντρο");
-            values.put(COLUMN_ANSWER3, "Λαχανικά");
-            values.put(COLUMN_ANSWER4, "Σιτηρά");
-            values.put(COLUMN_CORANSWER, "Δέντρο");
+            values.put(COLUMN_ANSWER1, "Λουλουδι");
+            values.put(COLUMN_ANSWER2, "Δεντρο");
+            values.put(COLUMN_ANSWER3, "Λαχανικα");
+            values.put(COLUMN_ANSWER4, "Σιτηρα");
+            values.put(COLUMN_CORANSWER, "Δεντρο");
             db.insert(TABLE_QUESTIONS, null, values);
 
             values = new ContentValues();
@@ -107,29 +107,29 @@ import android.database.sqlite.SQLiteOpenHelper;
 
             values = new ContentValues();
             values.put(COLUMN_QUESTION, "Το αμερικανικό σύμβολο του Uncle Sam βασίζεται στον αληθινό Samuel Wilson. Ως τι δούλευε ο Wilson στον Πόλεμο του 1812;");
-            values.put(COLUMN_ANSWER1, "Επιθεωρητής ποιότητας κρεάτων");
-            values.put(COLUMN_ANSWER2, "Μηχανικός όπλων");
-            values.put(COLUMN_ANSWER3, "Ιστορικός");
-            values.put(COLUMN_ANSWER4, "Ταχυδρόμος");
-            values.put(COLUMN_CORANSWER, "Επιθεωρητής ποιότητας κρεάτων");
+            values.put(COLUMN_ANSWER1, "Επιθεωρητης ποιοτητας κρεατων");
+            values.put(COLUMN_ANSWER2, "Μηχανικος οπλων");
+            values.put(COLUMN_ANSWER3, "Ιστορικος");
+            values.put(COLUMN_ANSWER4, "Ταχυδρομος");
+            values.put(COLUMN_CORANSWER, "Επιθεωρητης ποιοτητας κρεατων");
             db.insert(TABLE_QUESTIONS, null, values);
 
             values = new ContentValues();
             values.put(COLUMN_QUESTION, "Ποιον χρησιμοποίησε ως μοντέλο ο Grant Wood για τον διάσημο πίνακά του 'American Gothic';");
-            values.put(COLUMN_ANSWER1, "Έναν πλανόδιο πωλητή");
-            values.put(COLUMN_ANSWER2, "Τον τοπικό σερίφη");
-            values.put(COLUMN_ANSWER3, "Τον οδοντίατρό του");
-            values.put(COLUMN_ANSWER4, "Τον χασάπη του");
-            values.put(COLUMN_CORANSWER, "Τον οδοντίατρό του");
+            values.put(COLUMN_ANSWER1, "Εναν πλανοδιο πωλητη");
+            values.put(COLUMN_ANSWER2, "Τον τοπικο σεριφη");
+            values.put(COLUMN_ANSWER3, "Τον οδοντιατρο του");
+            values.put(COLUMN_ANSWER4, "Τον χασαπη του");
+            values.put(COLUMN_CORANSWER, "Τον οδοντιατρο του");
             db.insert(TABLE_QUESTIONS, null, values);
 
             values = new ContentValues();
             values.put(COLUMN_QUESTION, "Τι απεικονίζεται πάνω στο οδικό σήμα που ειδοποιεί για την ύπαρξη εστιατορίου;");
-            values.put(COLUMN_ANSWER1, "Πιρούνι δίπλα σε μαχαίρι");
-            values.put(COLUMN_ANSWER2, "Πιρούνι δίπλα σε κουτάλι");
-            values.put(COLUMN_ANSWER3, "Πιρούνι-μαχαίρι χιαστί");
-            values.put(COLUMN_ANSWER4, "Πιρούνι-κουτάλι χιαστί");
-            values.put(COLUMN_CORANSWER, "Πιρούνι-κουτάλι χιαστί");
+            values.put(COLUMN_ANSWER1, "Πιρουνι διπλα σε μαχαιρι");
+            values.put(COLUMN_ANSWER2, "Πιρουνι διπλα σε κουταλι");
+            values.put(COLUMN_ANSWER3, "Πιρουνι-μαχαιρι χιαστι");
+            values.put(COLUMN_ANSWER4, "Πιρουνι-κουταλι χιαστι");
+            values.put(COLUMN_CORANSWER, "Πιρουνι-κουταλι χιαστι");
             db.insert(TABLE_QUESTIONS, null, values);
 
             String sql2 = "CREATE TABLE "+TABLE_SCORE+" ( " +

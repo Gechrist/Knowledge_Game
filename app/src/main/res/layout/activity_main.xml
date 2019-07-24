@@ -5,29 +5,31 @@
     android:id="@+id/layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingTop="250dp"
     android:background="@drawable/game"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <EditText
         android:id="@+id/edtxt_name"
-        android:layout_width="262dp"
-        android:layout_height="wrap_content"
+        android:layout_width="360dp"
+        android:layout_height="62dp"
         android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:background="#ffffff"
         android:ems="10"
-        android:foregroundGravity="bottom|center"
-        android:hint="Το όνομα σου"
-        android:inputType="textPersonName"
-        android:background="#ffffff"/>
+        android:foregroundGravity="center"
+        android:gravity="center|center_horizontal"
+        android:hint="Το όνομά σου"
+        android:inputType="textPersonName" />
 
     <Button
         android:id="@+id/btn_start"
-        android:layout_width="265dp"
-        android:layout_height="wrap_content"
+        android:layout_width="360dp"
+        android:layout_height="62dp"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="130dp"
+        android:background="@color/button"
         android:foregroundGravity="center_vertical|center"
         android:gravity="center_horizontal|center_vertical"
-        android:text="Έναρξη" />
+        android:text="εναρξη" />
 </LinearLayout>

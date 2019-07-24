@@ -11,8 +11,8 @@
 
     <TextView
         android:id="@+id/txtview_top"
-        android:layout_width="match_parent"
-        android:layout_height="52dp"
+        android:layout_width="360dp"
+        android:layout_height="62dp"
         android:layout_gravity="center"
         android:background="#ffffff"
         android:foregroundGravity="center"
@@ -22,10 +22,10 @@
 
     <ListView
         android:id="@+id/listview"
-        android:layout_width="match_parent"
+        android:layout_width="360dp"
         android:layout_height="match_parent"
+        android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        android:textSize="18sp"
-        />
+        android:textSize="18sp" />
 
 </LinearLayout>
