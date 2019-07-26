@@ -9,6 +9,8 @@ import android.view.MenuItem;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.jaeger.library.StatusBarUtil;
+
 import java.util.ArrayList;
 
 public class Top10Activity extends AppCompatActivity {
@@ -17,6 +19,8 @@ public class Top10Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_top10);
+
+        StatusBarUtil.setTransparent(this);
 
         TextView txtvw_title = findViewById(R.id.txtview_top);
         ListView listView = findViewById(R.id.listview);

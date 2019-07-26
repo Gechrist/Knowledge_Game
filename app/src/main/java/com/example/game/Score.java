@@ -9,6 +9,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import com.jaeger.library.StatusBarUtil;
+
 public class Score extends AppCompatActivity {
     private SqlLiteHelper dbHelper;
 
@@ -17,8 +19,9 @@ public class Score extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_score);
 
-        Player player = getIntent().getParcelableExtra("player");
+        StatusBarUtil.setTransparent(this);
 
+        Player player = getIntent().getParcelableExtra("player");
         TextView textView = findViewById(R.id.txtview_score);
 
         textView.setText(player.getName()+ ", το σκορ σου είναι \n" + player.getScore()+"/10");

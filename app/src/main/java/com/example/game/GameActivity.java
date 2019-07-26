@@ -12,6 +12,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.jaeger.library.StatusBarUtil;
+
 import java.util.Random;
 
 
@@ -28,11 +30,12 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
     String[] id = {"10","1","2","3","4","5","6","7","8","9"};
     int i = 0;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
+
+        StatusBarUtil.setTransparent(this);
 
         this.txtview_question = findViewById(R.id.txtview_question);
         this.txtview_answer = findViewById(R.id.txtview_answer);
@@ -47,6 +50,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
 }
 
          public void populate(){
+        if (i == 10){return;}
         Button[] btn = {buttonA, buttonB, buttonC, buttonD};
         shuffleArray(btn);
         Questions question = new Questions();
@@ -92,8 +96,10 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         String b = buttonB.getText().toString();
         String c = buttonC.getText().toString();
         String d = buttonD.getText().toString();
+
+
             switch(view.getId()){
-                case R.id.btn_A: if(i == 10) {startActivity(intent); this.finish();} if (a.equals(answer)) {buttonA.setBackgroundColor(Color.GREEN); player.setScore(player.getScore()+ 1);i = i + 1;
+                case R.id.btn_A:  if (a.equals(answer)) {buttonA.setBackgroundColor(Color.GREEN); player.setScore(player.getScore()+ 1);i = i + 1;if(i == 10) {startActivity(intent); this.finish();}
                     handler.postDelayed(new Runnable() {
                         @Override
                         public void run() {
@@ -102,7 +108,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     }, 300);
 
 
-                } else {buttonA.setBackgroundColor(Color.RED);i = i + 1;
+                } else {buttonA.setBackgroundColor(Color.RED);i = i + 1;if(i == 10) {startActivity(intent); this.finish();}
 
                     handler.postDelayed(new Runnable() {
                         @Override
@@ -112,34 +118,34 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     }, 300);
 
                 } break;
-                case R.id.btn_B:   if(i == 10) { startActivity(intent); this.finish();} if (b.equals(answer)) {buttonB.setBackgroundColor(Color.GREEN); player.setScore(player.getScore()+ 1);i = i + 1;handler.postDelayed(new Runnable() {
+                case R.id.btn_B: if (b.equals(answer)) {buttonB.setBackgroundColor(Color.GREEN); player.setScore(player.getScore()+ 1);i = i + 1;if(i == 10) {startActivity(intent); this.finish();}handler.postDelayed(new Runnable() {
                     @Override
                     public void run() {
                         populate();
                     }
-                }, 300);} else {buttonB.setBackgroundColor(Color.RED);i = i + 1;handler.postDelayed(new Runnable() {
+                }, 300);} else {buttonB.setBackgroundColor(Color.RED);i = i + 1;if(i == 10) {startActivity(intent); this.finish();}handler.postDelayed(new Runnable() {
                     @Override
                     public void run() {
                         populate();
                     }
                 }, 300);}break;
-                case R.id.btn_C:  if(i == 10) {startActivity(intent); this.finish();} if (c.equals(answer)) {buttonC.setBackgroundColor(Color.GREEN); player.setScore(player.getScore()+ 1);i = i + 1;handler.postDelayed(new Runnable() {
+                case R.id.btn_C: if (c.equals(answer)) {buttonC.setBackgroundColor(Color.GREEN); player.setScore(player.getScore()+ 1);i = i + 1;if(i == 10) {startActivity(intent); this.finish();}handler.postDelayed(new Runnable() {
                     @Override
                     public void run() {
                         populate();
                     }
-                }, 300);} else {buttonC.setBackgroundColor(Color.RED);i = i + 1;handler.postDelayed(new Runnable() {
+                }, 300);} else {buttonC.setBackgroundColor(Color.RED);i = i + 1;if(i == 10) {startActivity(intent); this.finish();}handler.postDelayed(new Runnable() {
                     @Override
                     public void run() {
                         populate();
                     }
                 }, 300);} break;
-                case R.id.btn_D:  if(i == 10) {startActivity(intent); this.finish();} if (d.equals(answer)) {buttonD.setBackgroundColor(Color.GREEN); player.setScore(player.getScore()+ 1);i = i + 1;handler.postDelayed(new Runnable() {
+                case R.id.btn_D:  if (d.equals(answer)) {buttonD.setBackgroundColor(Color.GREEN); player.setScore(player.getScore()+ 1);i = i + 1;if(i == 10) {startActivity(intent); this.finish();}handler.postDelayed(new Runnable() {
                     @Override
                     public void run() {
                         populate();
                     }
-                }, 300);} else {buttonD.setBackgroundColor(Color.RED);i = i + 1;handler.postDelayed(new Runnable() {
+                }, 300);} else {buttonD.setBackgroundColor(Color.RED);i = i + 1;if(i == 10) {startActivity(intent); this.finish();}handler.postDelayed(new Runnable() {
                     @Override
                     public void run() {
                         populate();

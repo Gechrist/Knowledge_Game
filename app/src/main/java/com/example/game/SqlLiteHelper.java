@@ -45,7 +45,7 @@ import android.database.sqlite.SQLiteOpenHelper;
             ContentValues values = new ContentValues();
             values.put(COLUMN_QUESTION, "Ποια σημασία έχει λάβει η 'Νεφελοκοκκυγία' του Αριστοφάνη στην αγγλική γλώσσα;");
             values.put(COLUMN_ANSWER1, "Ειναι ο υπνος με τα ματια ανοιχτα");
-            values.put(COLUMN_ANSWER2, "Ειναι η θραυση του γυαλιού με τη φωνη σου");
+            values.put(COLUMN_ANSWER2, "Ειναι η θραυση του γυαλιου με τη φωνη σου");
             values.put(COLUMN_ANSWER3, "Ειναι η αναζητηση σχηματων στα συννεφα");
             values.put(COLUMN_ANSWER4, "Ειναι το κολυμπι σε παγωμενα νερα");
             values.put(COLUMN_CORANSWER, "Ειναι η αναζητηση σχηματων στα συννεφα");
@@ -135,7 +135,7 @@ import android.database.sqlite.SQLiteOpenHelper;
             String sql2 = "CREATE TABLE "+TABLE_SCORE+" ( " +
                     SCORE_COLUMN_ID+" integer primary key autoincrement, "+
                     SCORE_COLUMN_NAME+" text not null, "+
-                    SCORE_COLUMN_SCORE+" text not null)";
+                    SCORE_COLUMN_SCORE+" integer)";
             db.execSQL(sql2);
 
         }
