@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/game"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edtxt_name"
+        android:layout_width="320dp"
+        android:layout_height="62dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:background="#ffffff"
+        android:foregroundGravity="center"
+        android:gravity="center|center_horizontal"
+        android:hint="Το όνομά σου"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="320dp"
+        android:layout_height="62dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="130dp"
+        android:background="@color/button"
+        android:foregroundGravity="center_vertical|center"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="εναρξη" />
+</LinearLayout>
